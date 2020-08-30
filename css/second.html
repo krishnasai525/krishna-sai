@@ -54,34 +54,20 @@ a:active {
   text-decoration: underline;
   background-color: hotpink;
 }
-ul.a {
-	list-style-position: outside;
-}
-ul.b {
-	list-style-position: inside;
-}
-ol {
-  background: #03ffee;
-  padding: 20px;
-}
-
-ul {
-  background: #dd03ff;
-  padding: 20px;
-}
-
-ol li {
-  background: #e9ffe5;
-  padding: 5px;
-  margin-left: 35px;
-}
-
-ul li {
-  background: #faebfc;
-  margin: 5px;
+table,th,td{
+outline:3px dashed yellow;
 }
 h4.hidden {
   display: none;
+}
+[class=cls]{
+background-color:white;
+}
+[id=id]{
+background-color:lightgreen;
+}
+body{
+color:red;
 }
 </style>
 </head>
@@ -102,20 +88,29 @@ The CSS specifications are maintained by the World Wide Web Consortium (W3C). In
 <b><a href="https://github.com/krishnasai525/krishna-sai/commit/96517600be1204582fa28c94dd259a8e6afa0458" >register</a></b>
 
 <h2>The cse languages</h2>
-<h2>list-style-position: outside (default):</h2>
-<ol class="a">
-  <li>Data structure - A data structure is a data organization, management, and storage format that enables efficient access and modification.</li>
-  <li>Computer Organization - A  computer organisation is concerned with the structure and behaviour of a computer system as seen by the user.</li>
-  <li>Software engineering- A Software engineering is an engineering branch associated with development of software product using well-defined 
-   scientific principles, methods and procedures. The outcome of software engineering is an efficient and reliable software product.</li>
-</ol>
-<h2>list-style-position: inside:</h2>
-<ul class="b">
-  <li>Data structure - A data structure is a data organization, management, and storage format that enables efficient access and modification.</li>
-  <li>Computer Organization - A  computer organisation is concerned with the structure and behaviour of a computer system as seen by the user.</li>
-  <li>Software engineering- A Software engineering is an engineering branch associated with development of software product using well-defined 
-   scientific principles, methods and procedures. The outcome of software engineering is an efficient and reliable software product.</li>
-</ul>
+<table class="cls"><tr>
+  <th>Data structure </th>
+  <th>Computer Organization</th>
+  <th>Software engineering</th>
+ </tr>
+ <tr>
+  <td>a data organization, management, and storage.</td>
+  <td>the structure and behaviour of a computer system as seen by the user.</td>
+  <td>scientific principles, methods and procedures.</td>
+</tr>
+</table>
+<br><br><br>
+<table id="id"><tr>
+  <th>Data structure </th>
+  <th>Computer Organization</th>
+  <th>Software engineering</th>
+ </tr>
+ <tr>
+  <td>a data organization, management, and storage.</td>
+  <td>the structure and behaviour of a computer system as seen by the user.</td>
+  <td>scientific principles, methods and procedures.</td>
+</tr>
+</table>
 <h4 class="hidden">
 <p>Computer graphics is the branch of computer science that deals with generating images with the aid of computers. Today, computer graphics is a core technology in digital photography, film, video games, cell phone and computer displays, and many specialized applications.</p>
 </h4>
