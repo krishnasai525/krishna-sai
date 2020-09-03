@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+h1>java script to learn about Math function</h1>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
 <style>
 table,tr,td,th{
 	border:0.25px solid black;
@@ -27,6 +31,20 @@ function findExpression(){
 	var nameincaps=Name.match(pattern);
 	document.getElementById("demo2").innerHTML= nameincaps;
 }
+var x=Math.random()
+var y=-10;
+var z=10;
+var v=2;
+var u=Math.pow(z,v);
+document.getElementById("demo3").innerHTML=("random number:"+x+"<br>");
+document.write("round of x:"+Math.round(x)+"<br>");
+document.write("Ceil of x:"+Math.ceil(x)+"<br>");
+document.write("Floor of x:"+Math.floor(x)+"<br>");
+document.getElementById("demo4").innerHTML=("absolute of y:"+Math.abs(y)+"<br>");
+document.write("sqrt of z:"+Math.sqrt(z)+"<br>");
+document.getElementById("demo5").innerHTML=("power of z,x:"+u+"<br>");
+document.write("sin of z in radians:"+Math.sin(u)+"<br>");
+document.write("cos of z in radians:"+Math.cos(u)+"<br>");
 </script>
 <p>the console output is presented only on console</p>
 <p>to view the press f12,then selct console option and running the present program will display the output</p>
