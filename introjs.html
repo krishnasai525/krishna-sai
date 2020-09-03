@@ -9,14 +9,23 @@ table,tr,td,th{
 </head>
 <body>
 <button type="button">click here to see intoduction</button>
-<h1>Using Functions finding Average value</h1>
+<h1>java script regular expressions</h1>
 <p id="demo1"></p>
+<p>click below buttons to search for case-insensitive word in Name string</p>
+<p id="demo2"></p>
+<button type="button" onclick="findExpression()">click</button>
 <script>
 var Avg=findAverage(67,76,87,78);
 document.getElementById("demo").innerHTML = "Avg:"+Avg;
 function findAverage(SE,STM,SADP,SPM)
 {
 return ((SE+STM+SADP+SPM)/4);
+}
+function findExpression(){
+	var Name="MY NAME IS KRISHNA SAI"
+	var pattern=/krishna/i;
+	var nameincaps=Name.match(pattern);
+	document.getElementById("demo2").innerHTML= nameincaps;
 }
 </script>
 <p>the console output is presented only on console</p>
