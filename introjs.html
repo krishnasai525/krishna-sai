@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+table,tr,td,th{
+	border:0.25px solid black;
+}
+</style>
 </head>
 <body>
 <button type="button">click here to see intoduction</button>
-<h1>learn about datatypes </h1>
+<h1>Finding average of all the subjects:</h1>
 <p id="demo1"></p>
 <script>
+var SE=67;
+var STM=76;
+var SADP=87;
+var SPM=78;
+var Total=(SE+SADP+STM+SPM);
+var Average=(Total/4);
+document.getElementById("demo").innerHTML="Average:"+Average;
 var array = [1,2,3,4,5];
 document.getElementById("demo1").innerHTML=typeof array[3];
 console.log(5 + 6);
@@ -16,5 +28,42 @@ document.write("hello java script!!! STAY HOME! STAY SAFE!1");
 <p>the console output is presented only on console</p>
 <p>to view the press f12,then selct console option and running the present program will display the output</p>
 <p id="demo"></p>
+<table>
+<tr>
+	<th>s.no</th>
+	<th>subject name</th>
+	<th>marks</th>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>SE</td>
+	<td>67</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>STM</td>
+	<td>76</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>SADP</td>
+	<td>87</td>
+	</tr>
+	<tr>
+	<td>4</td>
+	<td>SPM</td>
+	<td>78</td>
+	</tr>
+	<tr>
+	<td>result</td>
+	<td>Total:</td>
+	<td><script>document.write(Total);</script></td>
+	</tr>
+	<tr>
+	<td>avg</td>
+	<td>Average:</td>
+	<td><script>document.write(Average);</script></td>
+	</tr>
+</table>
 </body>
 </html>
