@@ -11,6 +11,12 @@
 <button type="button" onmouseover="document.getElementById('demo2').innerHTML=Date()">the time now </button>
 <p id='demo2'></p>
 <script>
+try {
+  num.toUpperCase();
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
 
 if(x>10 & x<100)
 	{
