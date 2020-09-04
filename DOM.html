@@ -1,8 +1,17 @@
 <html>
 <head>
-<h3>printing date using console</h3>
+<h3>created button for interactiveness</h3>
 </head>
 <body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">the time now </button>
+<p id='demo'></p>
+<button type="button" onmouseout="document.getElementById('demo1').innerHTML=Date()">the time now </button>
+<p id='demo1'></p>
+<button type="button" onmouseover="document.getElementById('demo2').innerHTML=Date()">the time now </button>
+<p id='demo2'></p>
 <script>
 console.log(Date());
 </script>
