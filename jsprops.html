@@ -1,0 +1,57 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Dbl Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("pre").fadeIn();
+  });
+  $(".btn2").click(function(){
+    $("pre").fadeOut();
+  });
+});
+</script>
+ 
+<style> 
+.dclass1
+{
+    padding:4px;
+    text-align:center;
+    background-color:powderblue;
+    border:solid 2px;
+}
+.dClass2
+{
+    padding:4px;
+    text-align:center;
+    background-color:brown;
+    border:solid 2px;
+}
+</style>
+</head>
+<body>
+<div class="dClass1">DOUBLE CLICK</div>
+<p>This is a toogle button</p>
+
+<button>click to toggle</button>
+<pre>The below is fadein and fadeout</pre>
+
+<button class="btn1">Fadein</button>
+<button class="btn2">Fadeout</button>
+
+</body>
+</html>
+
