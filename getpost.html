@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("https://github.com/krishnasai525/krishna-sai/commit/0bebdf284468c3f225cf82e0c2c82ba2e6a2303f", function(data, status){
+      document.write("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("https://github.com/krishnasai525/krishna-sai/commit/a85278282c4b0389a9d33a395d34f16247ae9d8e",
+    {
+      name: "Donald Duck",
+      city: "Duckburg"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Send an HTTP GET request to a page and get the result back</button><br>
+<button>Send an HTTP POST request to a page and get the result back</button>
+
+</body>
+</html>
