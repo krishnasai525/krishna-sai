@@ -1,29 +1,36 @@
 <html>
 <head>
-<h3>using bootstrap for more interactive pages</h3>
-<link rel="stylesheet" href=
-"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity=
-"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
-crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-crossorigin="anonymous"></script>
+<style>
+<style>
+  span {
+    background: #def3ca;
+    padding: 3px;
+    float: left;
+  }
+</style>
+<h3>using jslibraries and frameworks</h3>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">the time now </button>
-<p id='demo'></p>
-<button type="button" onmouseout="document.getElementById('demo1').innerHTML=Date()">the time now </button>
-<p id='demo1'></p>
-<button type="button" onmouseover="document.getElementById('demo2').innerHTML=Date()">the time now </button>
-<p id='demo2'></p>
+ 
+<button id="hider">Hide it</button>
+<button id="shower">Show it</button>
+<div>
+  <span>click the</span>invisible  <span>it</span> <span>this</span>
+  <span>then</span> <span> hide content</span> <span>viceversa</span>
+  <span>done by</span> <span>next button</span>
+</div>
+ 
+<script>
+$( "#hider" ).click(function() {
+  $( "span:last-child" ).hide( "slow", function() {
+    // Use arguments.callee so we don't need a named function
+    $( this ).prev().hide( "slow", arguments.callee );
+  });
+});
+$( "#shower" ).click(function() {
+  $( "span" ).show( 2000 );
+});
+</script>
 </body>
 </html>
